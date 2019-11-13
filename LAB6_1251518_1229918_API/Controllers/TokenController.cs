@@ -21,7 +21,7 @@ namespace LAB6_1251518_1229918_API.Controllers
             var symmetricKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key));
             var credentials = new SigningCredentials(symmetricKey, SecurityAlgorithms.HmacSha256Signature);
             var token = new JwtSecurityToken(
-                    issuer: "Emisor",
+                    issuer: "Emisor_Admin",
                     audience: "Receptor",
                     expires: DateTime.Now.AddMinutes(10),
                     signingCredentials: credentials
