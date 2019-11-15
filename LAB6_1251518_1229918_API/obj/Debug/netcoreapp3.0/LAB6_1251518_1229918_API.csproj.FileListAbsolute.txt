@@ -286,7 +286,6 @@ C:\Users\ferol\source\repos\Lab6_DesarrolloAPI\LAB6_1251518_1229918_API\bin\Debu
 C:\Users\ferol\source\repos\Lab6_DesarrolloAPI\LAB6_1251518_1229918_API\obj\Debug\netcoreapp3.0\LAB6_1251518_1229918_API.csprojAssemblyReference.cache
 C:\Users\ferol\source\repos\Lab6_DesarrolloAPI\LAB6_1251518_1229918_API\obj\Debug\netcoreapp3.0\staticwebassets\LAB6_1251518_1229918_API.StaticWebAssets.Manifest.cache
 C:\Users\ferol\source\repos\Lab6_DesarrolloAPI\LAB6_1251518_1229918_API\obj\Debug\netcoreapp3.0\staticwebassets\LAB6_1251518_1229918_API.StaticWebAssets.xml
-C:\Users\ferol\source\repos\Lab6_DesarrolloAPI\LAB6_1251518_1229918_API\obj\Debug\netcoreapp3.0\LAB6_1251518_1229918_API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\ferol\source\repos\Lab6_DesarrolloAPI\LAB6_1251518_1229918_API\obj\Debug\netcoreapp3.0\LAB6_1251518_1229918_API.AssemblyInfoInputs.cache
 C:\Users\ferol\source\repos\Lab6_DesarrolloAPI\LAB6_1251518_1229918_API\obj\Debug\netcoreapp3.0\LAB6_1251518_1229918_API.AssemblyInfo.cs
 C:\Users\ferol\source\repos\Lab6_DesarrolloAPI\LAB6_1251518_1229918_API\obj\Debug\netcoreapp3.0\LAB6_1251518_1229918_API.RazorTargetAssemblyInfo.cache
@@ -295,3 +294,10 @@ C:\Users\ferol\source\repos\Lab6_DesarrolloAPI\LAB6_1251518_1229918_API\obj\Debu
 C:\Users\ferol\source\repos\Lab6_DesarrolloAPI\LAB6_1251518_1229918_API\obj\Debug\netcoreapp3.0\LAB6_1251518_1229918_API.pdb
 C:\Users\ferol\source\repos\Lab6_DesarrolloAPI\LAB6_1251518_1229918_API\bin\Debug\netcoreapp3.0\tokenGen.dll
 C:\Users\ferol\source\repos\Lab6_DesarrolloAPI\LAB6_1251518_1229918_API\bin\Debug\netcoreapp3.0\tokenGen.pdb
+C:\Users\ferol\source\repos\Lab6_DesarrolloAPI\LAB6_1251518_1229918_API\bin\Debug\netcoreapp3.0\System.Web.Razor.dll
+C:\Users\ferol\source\repos\Lab6_DesarrolloAPI\LAB6_1251518_1229918_API\bin\Debug\netcoreapp3.0\System.Web.Helpers.dll
+C:\Users\ferol\source\repos\Lab6_DesarrolloAPI\LAB6_1251518_1229918_API\bin\Debug\netcoreapp3.0\System.Web.WebPages.Deployment.dll
+C:\Users\ferol\source\repos\Lab6_DesarrolloAPI\LAB6_1251518_1229918_API\bin\Debug\netcoreapp3.0\System.Web.WebPages.Razor.dll
+C:\Users\ferol\source\repos\Lab6_DesarrolloAPI\LAB6_1251518_1229918_API\bin\Debug\netcoreapp3.0\System.Web.WebPages.dll
+C:\Users\ferol\source\repos\Lab6_DesarrolloAPI\LAB6_1251518_1229918_API\bin\Debug\netcoreapp3.0\Microsoft.Web.Infrastructure.dll
+C:\Users\ferol\source\repos\Lab6_DesarrolloAPI\LAB6_1251518_1229918_API\obj\Debug\netcoreapp3.0\LAB6_1251518_1229918_API.MvcApplicationPartsAssemblyInfo.cache

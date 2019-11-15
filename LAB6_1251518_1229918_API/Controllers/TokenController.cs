@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+
 namespace LAB6_1251518_1229918_API.Controllers
 {
     [Route("api/[controller]")]
@@ -6,14 +7,15 @@ namespace LAB6_1251518_1229918_API.Controllers
     public class TokenController : ControllerBase
     {
         [HttpPost]
-        public ActionResult SetToken(string key)
+        public IActionResult SetToken([FromBody]string json, string key)
         {
-            return RedirectToAction("GetToken", new { key = key });
+            
+            return RedirectToAction("GetToken", new { key = key,  json = json});
         }
         [HttpGet]
-        public ActionResult GetToken(string key)
+        public ActionResult GetToken(string key, string json)
         {
-            var token = tokenGen.tokenGenerator.generator(key);
+            var token = tokenGen.tokenGenerator.generator(key, json);
             return Ok(token);
         }
     }

@@ -9,24 +9,20 @@ namespace tokenGen
 {
     public class tokenGenerator
     {
-        public static async Task<string> generator(string privateKey)
+        public static async Task<string> generator(string privateKey, string json)
         {
-            var user = new User { UserId = 1, EmailAddress = "fernando@sendpizza.com", FirstName = "Fernando", LastName = "Oliva" };
-            var userJson = Newtonsoft.Json.JsonConvert.SerializeObject(user);
             var issuer = "Machete.com/remitente";
             var authority = "MacheteMontenegro";
-            //la llave privada debe contener 256 caracteres
-            var createJwt = await CreateJWTAsync(user, issuer, authority, privateKey, userJson);
+            var createJwt = await CreateJWTAsync(issuer, authority, privateKey, json);
             return createJwt;
         }
-        public static async Task<string> CreateJWTAsync(User user, string issuer, string authority, string symSec, string userJson)
+
+        public static async Task<string> CreateJWTAsync(string issuer, string authority, string symSec, string userJson)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
+            var claims = await CreateClaimsIdentities("Datos Usuario en Json " + userJson);
 
-
-            var claims = await CreateClaimsIdentities(userJson);
             var token = tokenHandler.CreateJwtSecurityToken(
-
                 issuer: issuer,
                 audience: authority,
                 subject: claims,
@@ -47,14 +43,6 @@ namespace tokenGen
             claimsIdentity.AddClaim(new Claim(ClaimTypes.Name, userJson));
             return Task.FromResult(claimsIdentity);
         }
-        
-    }
-    public class User
-    {
-        public int UserId { get; set; }
-        public string EmailAddress { get; set; }
-        public string FullName { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+
     }
 }
