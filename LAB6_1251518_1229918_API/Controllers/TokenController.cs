@@ -16,7 +16,7 @@ namespace LAB6_1251518_1229918_API.Controllers
         [HttpGet]
         public ActionResult GetToken()
         {
-            var token = protoken.Program.generator();
+            var token = protoken.TokenGenerator.generator();
             return Ok(token);
         }
     }

@@ -6,11 +6,15 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TokenGenerator
+namespace protoken
 {
-    public class Program
+    public class TokenGenerator
     {
-        public static async Task Main(string[] args)
+        public static void Main(string[] args)
+        {
+
+        }
+        public static async Task <string> generator()
         {
             var user = new User { UserId = 1, EmailAddress = "fernando@sendpizza.com", FirstName = "Fernando", LastName = "Oliva" };
             var json = new JavaScriptSerializer().Serialize(user);
@@ -20,14 +24,12 @@ namespace TokenGenerator
             var privateKey = "J6k2eVCTXDp5b97u6gNH5GaaqHDxCmzz2wv3PRPFRsuW2UavK8LGPRauC4VSeaetKTMtVmVzAC8fh8Psvp8PFybEvpYnULHfRpM8TA2an7GFehrLLvawVJdSRqh2unCnWehhh2SJMMg5bktRRapA8EGSgQUV8TCafqdSEHNWnGXTjjsMEjUpaxcADDNZLSYPMyPSfp6qe5LMcd5S9bXH97KeeMGyZTS2U8gp3LGk2kH4J4F3fsytfpe9H9qKwgjb";
             var userJson = new JavaScriptSerializer().Serialize(user);
             var createJwt = await CreateJWTAsync(user, issuer, authority, privateKey, userJson);
-            await Console.Out.WriteLineAsync(createJwt);
-            await Console.In.ReadLineAsync();
+            return createJwt;
         }
-
-        public static async Task<string> CreateJWTAsync(User user, string issuer, string authority, string symSec, string userJson)
+        public static async Task<string> CreateJWTAsync(User user, string issuer, string authority, string symSec, string userJson)       
         {
             var tokenHandler = new JwtSecurityTokenHandler();
-            var claims = await CreateClaimsIdentities("Datos Usuario en Json " + userJson);
+            var claims = await CreateClaimsIdentities("Datos Usuario en Json "+userJson);
 
             var token = tokenHandler.CreateJwtSecurityToken(
                 issuer: issuer,
