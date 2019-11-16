@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace LAB6_1251518_1229918_API.Controllers
 {
@@ -8,9 +10,10 @@ namespace LAB6_1251518_1229918_API.Controllers
 
         [HttpPost]
         [Route("api/Token/Post/{key}")]
-        public IActionResult SetToken([FromBody]Pizza json, string key)
+        public IActionResult SetToken([FromBody]Dictionary<string, object> json, string key)
         {
-            var stringJson = "Id: " + json.Id.ToString() + ", Name: " + json.Id.ToString() + ", Size: " + json.Size.ToString();
+            key = key.PadLeft(256, ' ');
+            var stringJson = string.Join(",", json.Select(x => x.Key + ":" + x.Value).ToArray());
             return RedirectToAction("GetToken", new { key = key, json = stringJson });
         }
 
