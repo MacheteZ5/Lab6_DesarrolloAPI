@@ -20,7 +20,7 @@ namespace tokenGen
         public static async Task<string> CreateJWTAsync(string issuer, string authority, string symSec, string userJson)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
-            var claims = await CreateClaimsIdentities("Datos Usuario en Json " + userJson);
+            var claims = await CreateClaimsIdentities(userJson);
 
             var token = tokenHandler.CreateJwtSecurityToken(
                 issuer: issuer,
