@@ -11,7 +11,7 @@ namespace tokenGen
     {
         public static async Task<string> generator(string privateKey, string json)
         {
-            var issuer = "Machete.com/remitente";
+            var issuer = "Machete&Fernando.com/remitente";
             var authority = "MacheteMontenegro";
             var createJwt = await CreateJWTAsync(issuer, authority, privateKey, json);
             return createJwt;
