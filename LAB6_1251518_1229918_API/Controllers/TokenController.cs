@@ -1,23 +1,25 @@
-﻿using System;
-using System.IdentityModel.Tokens.Jwt;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.IdentityModel.Tokens;
-using System.Security.Claims;
-using System.Web.Script.Serialization;
-using protoken;
+﻿using Microsoft.AspNetCore.Mvc;
+
 namespace LAB6_1251518_1229918_API.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
     public class TokenController : ControllerBase
     {
-        [HttpGet]
-        public ActionResult GetToken()
+
+        [HttpPost]
+        [Route("api/Token/Post/{key}")]
+        public IActionResult SetToken([FromBody]Pizza json, string key)
         {
-            var token = protoken.TokenGenerator.generator("J6k2eVCTXDp5b97u6gNH5GaaqHDxCmzz2wv3PRPFRsuW2UavK8LGPRauC4VSeaetKTMtVmVzAC8fh8Psvp8PFybEvpYnULHfRpM8TA2an7GFehrLLvawVJdSRqh2unCnWehhh2SJMMg5bktRRapA8EGSgQUV8TCafqdSEHNWnGXTjjsMEjUpaxcADDNZLSYPMyPSfp6qe5LMcd5S9bXH97KeeMGyZTS2U8gp3LGk2kH4J4F3fsytfpe9H9qKwgjb");
+            var stringJson = "Id: " + json.Id.ToString() + ", Name: " + json.Id.ToString() + ", Size: " + json.Size.ToString();
+            return RedirectToAction("GetToken", new { key = key, json = stringJson });
+        }
+
+        [HttpGet]
+        [Route("api/Token/Get/{key}")]
+        public ActionResult GetToken(string key, string json)
+        {
+            var token = tokenGen.tokenGenerator.generator(key, json);
             return Ok(token);
         }
-    }
+    } 
 }

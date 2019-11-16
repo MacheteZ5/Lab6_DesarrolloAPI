@@ -34,6 +34,7 @@ namespace LAB6_1251518_1229918_API.Controllers
                 Summary = Summaries[rng.Next(Summaries.Length)]
             })
             .ToArray();
+
         }
     }
 }
