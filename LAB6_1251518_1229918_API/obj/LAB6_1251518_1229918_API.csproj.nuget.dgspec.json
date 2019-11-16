@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ferol\\source\\repos\\Lab6_DesarrolloAPI\\LAB6_1251518_1229918_API\\LAB6_1251518_1229918_API.csproj": {}
+    "C:\\Users\\mache\\Documents\\Segundo año\\Lab Esctructuras II\\Lab6\\Descarga\\Lab6_DesarrolloAPI\\LAB6_1251518_1229918_API\\LAB6_1251518_1229918_API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ferol\\source\\repos\\Lab6_DesarrolloAPI\\LAB6_1251518_1229918_API\\LAB6_1251518_1229918_API.csproj": {
+    "C:\\Users\\mache\\Documents\\Segundo año\\Lab Esctructuras II\\Lab6\\Descarga\\Lab6_DesarrolloAPI\\LAB6_1251518_1229918_API\\LAB6_1251518_1229918_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ferol\\source\\repos\\Lab6_DesarrolloAPI\\LAB6_1251518_1229918_API\\LAB6_1251518_1229918_API.csproj",
+        "projectUniqueName": "C:\\Users\\mache\\Documents\\Segundo año\\Lab Esctructuras II\\Lab6\\Descarga\\Lab6_DesarrolloAPI\\LAB6_1251518_1229918_API\\LAB6_1251518_1229918_API.csproj",
         "projectName": "LAB6_1251518_1229918_API",
-        "projectPath": "C:\\Users\\ferol\\source\\repos\\Lab6_DesarrolloAPI\\LAB6_1251518_1229918_API\\LAB6_1251518_1229918_API.csproj",
-        "packagesPath": "C:\\Users\\ferol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ferol\\source\\repos\\Lab6_DesarrolloAPI\\LAB6_1251518_1229918_API\\obj\\",
+        "projectPath": "C:\\Users\\mache\\Documents\\Segundo año\\Lab Esctructuras II\\Lab6\\Descarga\\Lab6_DesarrolloAPI\\LAB6_1251518_1229918_API\\LAB6_1251518_1229918_API.csproj",
+        "packagesPath": "C:\\Users\\mache\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mache\\Documents\\Segundo año\\Lab Esctructuras II\\Lab6\\Descarga\\Lab6_DesarrolloAPI\\LAB6_1251518_1229918_API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ferol\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mache\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,8 +30,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\ferol\\source\\repos\\Lab6_DesarrolloAPI\\tokenGen\\tokenGen.csproj": {
-                "projectPath": "C:\\Users\\ferol\\source\\repos\\Lab6_DesarrolloAPI\\tokenGen\\tokenGen.csproj"
+              "C:\\Users\\mache\\Documents\\Segundo año\\Lab Esctructuras II\\Lab6\\Descarga\\Lab6_DesarrolloAPI\\tokenGen\\tokenGen.csproj": {
+                "projectPath": "C:\\Users\\mache\\Documents\\Segundo año\\Lab Esctructuras II\\Lab6\\Descarga\\Lab6_DesarrolloAPI\\tokenGen\\tokenGen.csproj"
               }
             }
           }
@@ -64,6 +67,10 @@
               "target": "Package",
               "version": "[3.0.0, )"
             },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.9.3, )"
+            },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
               "version": "[5.6.0, )"
@@ -91,17 +98,20 @@
         }
       }
     },
-    "C:\\Users\\ferol\\source\\repos\\Lab6_DesarrolloAPI\\tokenGen\\tokenGen.csproj": {
+    "C:\\Users\\mache\\Documents\\Segundo año\\Lab Esctructuras II\\Lab6\\Descarga\\Lab6_DesarrolloAPI\\tokenGen\\tokenGen.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ferol\\source\\repos\\Lab6_DesarrolloAPI\\tokenGen\\tokenGen.csproj",
+        "projectUniqueName": "C:\\Users\\mache\\Documents\\Segundo año\\Lab Esctructuras II\\Lab6\\Descarga\\Lab6_DesarrolloAPI\\tokenGen\\tokenGen.csproj",
         "projectName": "tokenGen",
-        "projectPath": "C:\\Users\\ferol\\source\\repos\\Lab6_DesarrolloAPI\\tokenGen\\tokenGen.csproj",
-        "packagesPath": "C:\\Users\\ferol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ferol\\source\\repos\\Lab6_DesarrolloAPI\\tokenGen\\obj\\",
+        "projectPath": "C:\\Users\\mache\\Documents\\Segundo año\\Lab Esctructuras II\\Lab6\\Descarga\\Lab6_DesarrolloAPI\\tokenGen\\tokenGen.csproj",
+        "packagesPath": "C:\\Users\\mache\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mache\\Documents\\Segundo año\\Lab Esctructuras II\\Lab6\\Descarga\\Lab6_DesarrolloAPI\\tokenGen\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ferol\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mache\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -125,6 +135,10 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.9.3, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
